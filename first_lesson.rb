@@ -58,16 +58,16 @@
 
 
 
-#Для класса Hash:
-  #Метод, проверяющий наличие заданного ключа в хэше
+# Для класса Hash:
+  # Метод, проверяющий наличие заданного ключа в хэше
 
-    hash_1 = {"Zero" => 0, "One" => 1, "Two" => 2}
-    hash_1.has_key?("Zero") # => true
+    hash_1 = {Zero: 0, One: 1, Two: 2}
+    hash_1.has_key?(:Zero) # => true
 
   # Метод, объединяющий 2 объекта хэшей
 
-    hash_2 = {"Three" => 3, "Four" => 4}
-    hash_1.merge(hash_2) # => {"Zero"=>0, "One"=>1, "Two"=>2, "Three"=>3, "Four"=>4}
+    hash_2 = {Three: 3, Four: 4}
+    hash_1.merge(hash_2) # => {:Zero=>0, :One=>1, :Two=>2, :Three=>3, :Four=>4}
 
 
 
@@ -112,8 +112,8 @@
 
     class String
 
-      def minus_string value
-        self.delete value
+      def minus_string (value)
+        self.delete (value)
       end
 
     end
